@@ -1,7 +1,7 @@
 .contact-form {
   &__heading {
     line-height: 120%;
-    color: $darkBlue;
+    color: $darkRed;
     text-align: center;
     font-size: 4.4rem;
     margin-bottom: 2.7rem;
@@ -48,7 +48,7 @@
       .wpcf7-acceptance {
         font-size: 1.6rem;
         line-height: 140%;
-        color: $darkBlue;
+        color: $darkRed;
 
 
         input[type="checkbox"] {
@@ -67,7 +67,7 @@
           width: 20px;
           height: 20px;
           background: $white;
-          border: 2px solid $darkBlue;
+          border: 2px solid $darkRed;
           border-radius: 2px;
           position: relative;
           top: 4px;
@@ -75,8 +75,8 @@
 
 
         input[type="checkbox"]:checked:before {
-          background: $darkBlue;
-          border-color: $darkBlue;
+          background: $darkRed;
+          border-color: $darkRed;
         }
 
         input[type="checkbox"]:disabled {
@@ -112,13 +112,13 @@
       .wpcf7-text,
       .wpcf7-email {
         width: 100%;
-        border: 1px solid $darkBlue;
+        border: 1px solid $darkRed;
 
         margin-top: 1.6rem;
         margin-bottom: 1rem;
         font-size: 1.6rem;
         line-height: 140%;
-        color: $darkBlue;
+        color: $darkRed;
         padding: 1.5rem 3.2rem;
 
         &.wpcf7-not-valid {
@@ -144,13 +144,13 @@
         line-height: 100%;
         text-transform: uppercase;
         display: inline-block;
-        background-color: $blue;
+        background-color: $red;
         color: $white;
         transition: all 0.3s ease;
 
         &:hover {
-          background-color: $lightBlue;
-          color: $darkBlue;
+          background-color: $red;
+          color: $white;
           transition: all 0.3s ease;
         }
       }
@@ -165,7 +165,7 @@
   &__email-info {
     font-size: 1.6rem;
     line-height: 150%;
-    color: $darkBlue;
+    color: $darkRed;
     text-align: left;
     position: relative;
     margin: 2rem 0 3rem 0;

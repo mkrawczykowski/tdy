@@ -1,0 +1,25 @@
+.go-up {
+  display: inline-block;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    width: 5.2rem;
+    height: 5.2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: $white;
+  }
+}

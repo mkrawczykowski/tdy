@@ -1,15 +1,32 @@
 .logo {
-  width: 15.5rem;
-  height: auto;
   display: inline-block;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
-  @include media-up(md) {
-    width: 19rem;
+  @include media-up(xxl) {
+    width: 35.9rem;
+    height: 20rem;
   }
 
-  @include media-up(xxl) {
-    width: 21.5rem;
+  &__picture {
+    width: 16.2rem;
+    height: 100%;
+  }
+
+  &__text {
+    width: 16.2rem;
+    height: 12rem;
+    font-size: 2rem;
+    line-height: 120%;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $white;
+    padding-left: 4.4rem;
+    border-left: 1px solid $white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0.7rem;
   }
 }

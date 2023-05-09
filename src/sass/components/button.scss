@@ -6,27 +6,15 @@
   text-transform: uppercase;
   display: inline-block;
 
-  &--blue {
-    background-color: $blue;
-    color: $white;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: $lightBlue;
-      color: $darkBlue;
-      transition: all 0.3s ease;
-    }
-  }
-
   &--white {
     background-color: $white;
-    color: $darkBlue;
-    border: 2px solid $lightBlue;
+    color: $darkRed;
+    border: 2px solid $red;
     transition: all 0.3s ease;
     box-shadow: 0px 0px 20px 1px rgba(171, 198, 214, 0.48);
 
     &:hover {
-      background-color: $lightBlue;
+      background-color: $red;
       color: $white;
       transition: all 0.3s ease;
     }
