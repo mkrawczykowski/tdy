@@ -1,14 +1,12 @@
 .hamburger {
   width: 4rem;
   height: 4rem;
-  // background-color: aqua;
   position: relative;
-
-
+  display: inline-block;
+  z-index: 5;
 
   @include media-up(xl) {
-    display: none; //for now
-    // display: block;
+    display: none;
   }
 
   &:hover {
@@ -16,7 +14,7 @@
   }
 
   span {
-    background-color: $black;
+    background-color: $white;
     display: inline-block;
     width: 4rem;
     height: 0.3rem;

@@ -5,21 +5,26 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 2.5rem 0.5rem 0 0;
+
+  &:hover {
+    svg {
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+    }
+  }
 
   svg {
     width: 5.2rem;
     height: 5.2rem;
     transition: all 0.3s ease;
-
-    &:hover {
-      transform: translateY(-10px);
-      transition: all 0.3s ease;
-    }
   }
 
   &__paragraph {
     font-size: 1.2rem;
     line-height: 120%;
     color: $white;
+    font-weight: 700;
+    margin-top: 1rem;
   }
 }

@@ -26,7 +26,7 @@ section {
   margin: 0 auto;
 
   @include variables.media-up(xxl) {
-    width: 168rem;
+    max-width: 168rem;
   }
 
   .row {

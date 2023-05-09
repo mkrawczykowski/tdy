@@ -9,7 +9,7 @@
     width: 100%;
     position: absolute;
     left: -100%;
-    background-color: $white;
+    background-color: $blackAlpha;
     margin-top: 7rem;
     position: absolute;
     z-index: 4;
@@ -21,6 +21,7 @@
 
     .main-nav__nav {
       height: 100%;
+      top: 2rem;
     }
   }
 
@@ -30,13 +31,13 @@
     height: 100%;
     flex-direction: column;
     width: 100%;
-    position: relative;
-    top: -2rem;
 
     @include media-up(xl) {
       align-items: center;
       flex-direction: row;
       width: auto;
+      position: relative;
+      top: -2rem;
     }
 
     .menu-item {
@@ -88,15 +89,17 @@
 
       &.current-menu-item {
         &:before {
-          position: absolute;
-          content: '';
-          display: inline-block;
-          height: 0.8rem;
-          width: 0.8rem;
-          background-color: $red;
-          border-radius: 10rem;
-          bottom: -2.4rem;
-          left: calc(50% - 0.3rem);
+          @include media-up(xl) {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            height: 0.8rem;
+            width: 0.8rem;
+            background-color: $red;
+            border-radius: 10rem;
+            bottom: -2.4rem;
+            left: calc(50% - 0.3rem);
+          }
         }
       }
 
@@ -113,7 +116,7 @@
 
 
       a {
-        padding: 0 0.2rem;
+        padding: 1.5rem 0.2rem;
 
         &:hover {
           color: $white;

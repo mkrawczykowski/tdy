@@ -10,23 +10,32 @@
   }
 
   &__picture {
-    width: 16.2rem;
+    width: 11rem;
     height: 100%;
+
+    @include media-up(xl) {
+      width: 16.2rem;
+    }
   }
 
   &__text {
-    width: 16.2rem;
-    height: 12rem;
-    font-size: 2rem;
-    line-height: 120%;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: $white;
-    padding-left: 4.4rem;
-    border-left: 1px solid $white;
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 0.7rem;
+    display: none;
+
+    @include media-up(xl) {
+      display: flex;
+      width: 16.2rem;
+      height: 12rem;
+      font-size: 2rem;
+      line-height: 120%;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $white;
+      padding-left: 4.4rem;
+      border-left: 1px solid $white;
+
+      align-items: center;
+      position: relative;
+      top: 0.7rem;
+    }
   }
 }
