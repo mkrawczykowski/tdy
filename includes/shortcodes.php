@@ -2,19 +2,27 @@
 
 function button_function($atts, $content = null) {
 	$a = shortcode_atts( array(
-		'kolor' => 'blue',
+		'ikona' => 'gloves',
 		'link' => 'https://',
+		'wyrownanie' => 'lewa',
 	), $atts );
 
-  $colors = array(
-    "niebieski" => "blue",
-    "bialy" => "white",
+  $icons = array(
+    "rekawice" => "gloves",
+    "kalendarz" => "calendar",
   );
 
-  $final_color = $colors[$a['kolor']];
+  $align = array(
+    "lewa" => "left",
+    "srodek" => "center",
+    "prawa" => "right",
+  );
 
-	// return "foo = {$a['kolor']}";
-  return '<a class="button button--' . $final_color . '" href="' . $a['link'] . '">' . $content . '</a>';
+  $final_icon = $icons[$a['ikona']];
+  $final_align = $align[$a['wyrownanie']];
+
+
+  return '<div class="button button--' . $final_icon . ' button--' . $final_align . '"><a class="button__link" href="' . $a['link'] . '">' . $content . '</a></div>';
 }
 add_shortcode( 'button', 'button_function' );
 ?>
