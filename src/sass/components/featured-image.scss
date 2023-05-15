@@ -1,19 +1,16 @@
-@import '~perfect-scrollbar/css/perfect-scrollbar.css';
-
 .featured-image {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
   position: relative;
   width: 100%;
-  height: auto;
-  min-height: 60rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @include media-up(xl) {
-    height: 60rem;
-  }
-
-  @include media-up(xxxl) {
-    height: 71rem;
+  &--front-page {
+    @include media-up(xxl) {
+      padding-top: 26rem;
+      min-height: 60rem;
+    }
   }
 }

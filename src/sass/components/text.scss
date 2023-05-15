@@ -1,10 +1,20 @@
 .text {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   max-width: 79rem;
   margin: 0 auto;
   font-weight: 500;
   color: $white;
+  padding: 2rem;
+
+  @include media-up(md) {
+    padding: 0;
+  }
+
+  @include media-up(xxl) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 
   &--small {
     color: $black;
@@ -27,5 +37,9 @@
 
   &--black {
     color: $black;
+  }
+
+  .button {
+    margin-top: 4.7rem;
   }
 }

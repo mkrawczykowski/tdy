@@ -1,4 +1,14 @@
 .heading-text-columns {
+  &--white {
+    .container {
+      background-color: $white;
+      border-radius: 2rem;
+      padding: 3rem;
+    }
+
+    // margin: 0 -2rem 0 -2rem;
+  }
+
   &__columns {
     display: flex;
 
@@ -8,6 +18,13 @@
       align-items: center;
 
       .heading-text-columns__icon {
+
+        &--size1 {}
+
+        &--size2 {}
+
+        &--size3 {}
+
         width: 10.9rem;
         height: 10.9rem;
       }

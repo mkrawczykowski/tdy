@@ -7,7 +7,7 @@
   $text_component_enable_full_width = get_sub_field('text_component_enable_full_width', $post->ID);
 ?>
 
-<section class="heading-text-columns" <?php display_margins_for_page($post->ID) ?>>
+<section class="heading-text-employees" <?php display_margins_for_page($post->ID) ?>>
   <div class="container">
     <div class="section-background <?php echo get_modifier_version($enable_white_version, 'section-background', 'white'); ?>">
       <?php

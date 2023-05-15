@@ -29,6 +29,12 @@ section {
     max-width: 164rem;
   }
 
+  &--wider {
+    @include variables.media-up(xxl) {
+      max-width: 168rem;
+    }
+  }
+
   .row {
     display: flex;
     margin-left: -2rem;

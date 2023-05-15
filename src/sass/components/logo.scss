@@ -12,6 +12,7 @@
   &__picture {
     width: 11rem;
     height: 100%;
+    margin-top: 4px;
 
     @include media-up(xl) {
       width: 16.2rem;

@@ -1,11 +1,27 @@
 .heading {
-  font-size: 6.4rem;
-  line-height: 8rem;
   max-width: 79rem;
   display: block;
   margin: 0 auto;
   color: $white;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  padding: 1rem;
+
+  @include media-up(md) {
+    padding: 0;
+  }
+
+  @include media-up(xxl) {
+    font-size: 6.4rem;
+    line-height: 8rem;
+    margin: 0 auto 4.2rem auto;
+    padding: 0;
+  }
+
+  &--margin-bottom-content {
+    margin: 0 auto 2.6rem auto;
+  }
 
   &--red-small {
     color: $red;

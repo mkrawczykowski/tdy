@@ -3,8 +3,6 @@
 ?>
 
 	<main class="">
-  
-  <?php get_template_part( 'sections/featured', 'image' ); ?>
 
     <?php
       if( have_rows( 'sections' ) ){

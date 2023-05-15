@@ -17,8 +17,6 @@
 
     $text_component_full_width = get_field('text_component_enable_full_width', $post->ID);
 
-    
-
     $header_section_content = $heading_component . $text_component;
   } else {
     $is_front_page = false;

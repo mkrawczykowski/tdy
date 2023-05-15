@@ -7,12 +7,16 @@
   $text_component_enable_full_width = get_sub_field('text_component_enable_full_width', $post->ID);
 ?>
 
-<section class="heading-text-columns" <?php display_margins_for_page($post->ID) ?>>
-  <div class="container">
-    <div class="section-background <?php echo get_modifier_version($enable_white_version, 'section-background', 'white'); ?>">
+<section class="heading-text-columns <?php echo get_modifier_version($enable_white_version, 'heading-text-columns', 'white'); ?>" >
+  <div class="container"<?php display_margins_for_page($post->ID) ?>>
+    <!-- <div class="section-background <?php echo get_modifier_version($enable_white_version, 'section-background', 'white'); ?>"> -->
       <?php
 
-      get_template_part( 'sections/heading-text', '' );
+      get_template_part( 'sections/heading-text', '', array(
+        'heading_component' => $heading_component,
+        'text_component' => $text_component,
+        'enable_white_version' => $enable_white_version
+      ) );
 
       if ( have_rows('columns_repeater', $post->ID) ):
       
@@ -42,6 +46,6 @@
         endif;
       ?>
 
-    </div>
+    <!-- </div> -->
   </div>
 </section>

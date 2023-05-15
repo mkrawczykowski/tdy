@@ -1,4 +1,29 @@
 .header {
+  background-size: cover;
+  background-blend-mode: saturation;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include media-up(md) {
+    background-position-x: center !important;
+  }
+
+  @include media-up(xxl) {
+    min-height: 72.6rem;
+  }
+
+  &--featured-image {
+    @include media-up(xxl) {
+      min-height: 108rem;
+      background-position: -5px -35px;
+    }
+  }
+
+  &__gradient {
+    background: linear-gradient(139deg, rgba(1, 1, 1, 1) 0%, rgba(95, 95, 95, 0) 100%);
+    min-height: inherit;
+  }
+
   .go-up {
     display: none;
   }
