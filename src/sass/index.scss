@@ -3,6 +3,8 @@
 @import './_typography.scss';
 @import './_globals.scss';
 
+@import './components/heading.scss';
+@import './components/text.scss';
 @import './components/button.scss';
 @import './components/logo-menu.scss';
 @import './components/header.scss';
@@ -12,10 +14,15 @@
 @import './components/logo.scss';
 @import './components/featured-image.scss';
 @import './components/go-up.scss';
+@import './components/section-background.scss';
 
-@import './sections/heading-columns.scss';
+@import './sections/columns-image-text.scss';
+@import './sections/heading-text.scss';
 @import './sections/boxes-photos.scss';
 @import './sections/text-editor.scss';
 @import './sections/contact-form.scss';
 @import './sections/photo-gallery.scss';
+@import './sections/image.scss';
 @import './sections/heading-contact-data.scss';
+@import './sections/heading-text-columns.scss';
+@import './sections/heading-text-employers.scss';

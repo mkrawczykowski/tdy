@@ -1,0 +1,40 @@
+.heading {
+  font-size: 6.4rem;
+  line-height: 8rem;
+  max-width: 79rem;
+  display: block;
+  margin: 0 auto;
+  color: $white;
+  font-weight: 700;
+
+  &--red-small {
+    color: $red;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &--full-width {
+    max-width: 100%;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--black {
+    color: $black;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  strong {
+    font-weight: 900;
+  }
+}

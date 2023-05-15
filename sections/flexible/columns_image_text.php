@@ -1,19 +1,13 @@
 <?php
   global $post;
-  $heading_one = get_sub_field('heading_one', $post->ID);
   $image_or_text_right = get_sub_field('image_or_text_right', $post->ID);
   $image_or_text_left = get_sub_field('image_or_text_left', $post->ID);
   $text_below = get_sub_field('text_below', $post->ID);
-  $background_gradient = get_sub_field('background_gradient', $post->ID);
+  $enable_white_version = get_sub_field('enable_white_version', $post->ID);
 ?>
 
-<section class="heading-columns<?php echo $background_gradient ? ' heading-columns--gradient' : NULL; ?>" <?php display_margins_for_page($post->ID) ?>>
+<section class="columns-image-text <?php echo get_modifier_version($enable_white_version, 'columns-image-text', 'white'); ?>" <?php display_margins_for_page($post->ID) ?>>
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2><?php echo $heading_one; ?></h2>  
-      </div>
-    </div>
     <div class="row">
       <div class="col col--first">
         <?php display_column_content('left', $image_or_text_left); ?>
@@ -27,7 +21,7 @@
     if ($text_below) : ?>
       <div class="row">
         <div class="col">
-          <div class="heading-columns__text">
+          <div class="columns-image-text__text">
             <?php echo apply_filters('the_content', get_sub_field('text_below', $post->ID)); ?>
           </div>
         </div>
