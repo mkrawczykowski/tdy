@@ -3,11 +3,18 @@
   $heading_component = $args['heading_component'];
   $text_component = $args['text_component'];
   $enable_white_version = $args['enable_white_version'];
+  $heading_in_content = $args['heading_in_content'];
 ?>
 
 
 <?php if ($heading_component) : ?>
-  <h2 class="heading heading--center <?php echo get_modifier_version($enable_white_version, 'heading', 'black'); ?>">
+  <h2 class="heading heading--center 
+    <?php 
+      echo ' ';
+      echo get_modifier_version($heading_in_content, 'heading', 'margin-bottom-content'); 
+      echo ' ';
+      echo get_modifier_version($enable_white_version, 'heading', 'black'); 
+    ?>">
     <?php echo $heading_component; ?>
   </h2>
 <?php endif; ?>

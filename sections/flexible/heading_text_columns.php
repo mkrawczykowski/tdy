@@ -15,7 +15,8 @@
       get_template_part( 'sections/heading-text', '', array(
         'heading_component' => $heading_component,
         'text_component' => $text_component,
-        'enable_white_version' => $enable_white_version
+        'enable_white_version' => $enable_white_version,
+        'heading_in_content' => true,
       ) );
 
       if ( have_rows('columns_repeater', $post->ID) ):
