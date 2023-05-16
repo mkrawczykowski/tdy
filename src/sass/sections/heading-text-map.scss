@@ -1,1 +1,47 @@
-.heading-text-map {}
+.heading-text-map {
+  &--white {
+    .container {
+      background-color: $white;
+      border-radius: 2rem;
+      padding: 3rem;
+    }
+  }
+
+  &__image {
+    margin: 6.3rem -3rem 0 -3rem;
+  }
+
+  &__contact-info {
+    display: flex;
+    justify-content: space-around;
+
+    &>div {
+      font-size: 2rem;
+      line-height: 3rem;
+      color: $black;
+      position: relative;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__address {
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 5.3rem;
+      height: 5.2rem;
+      position: absolute;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="37.02" height="51.828" viewBox="0 0 37.02 51.828"><path d="M21.51,1037.362c-10.221,0-18.51,8.726-18.51,19.487,0,8.189,17.192,31.8,17.192,31.8a1.607,1.607,0,0,0,1.318.541,1.741,1.741,0,0,0,1.307-.541s17.2-23.825,17.2-31.8C40.02,1046.088,31.731,1037.362,21.51,1037.362Zm0,10.824a6.506,6.506,0,0,1,0,12.994,6.506,6.506,0,0,1,0-12.994Z" transform="translate(-3 -1037.362)" fill="%23c12525"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center center;
+      left: -6rem;
+    }
+  }
+
+  &__phone {}
+
+  &__email {}
+}
