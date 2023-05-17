@@ -16,6 +16,7 @@
         'heading_component' => $heading_component,
         'text_component' => $text_component,
         'enable_white_version' => $enable_white_version,
+        'text_component_enable_full_width' => $text_component_enable_full_width,
         'heading_in_content' => true,
       ) );
 

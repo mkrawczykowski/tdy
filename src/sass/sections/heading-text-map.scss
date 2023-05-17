@@ -3,8 +3,16 @@
     .container {
       background-color: $white;
       border-radius: 2rem;
-      padding: 3rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
+
+    .heading-text-map__address,
+    .heading-text-map__phone,
+    .heading-text-map__email {
+      color: $black;
+    }
+
   }
 
   &__image {
@@ -14,11 +22,13 @@
   &__contact-info {
     display: flex;
     justify-content: space-around;
+    margin-top: 8.7rem;
+    padding: 0px 18rem;
 
     &>div {
       font-size: 2rem;
       line-height: 3rem;
-      color: $black;
+      color: $white;
       position: relative;
 
       strong {
@@ -41,7 +51,31 @@
     }
   }
 
-  &__phone {}
+  &__phone {
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 5.3rem;
+      height: 5.2rem;
+      position: absolute;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="53" height="51" viewBox="0 0 53 51"><rect width="53" height="51" fill="%23c12525" opacity="0"/><path d="M37.084,45.405C17.718,45.381,2.025,30.432,2,11.983A10.24,10.24,0,0,1,12.48,2a9.41,9.41,0,0,1,1.754.152,8.988,8.988,0,0,1,1.64.391A2.206,2.206,0,0,1,17.355,4.17l3.121,13.021a2.1,2.1,0,0,1-.592,2c-.3.3-.319.326-3.121,1.714A22.065,22.065,0,0,0,27.858,31.515c1.481-2.691,1.5-2.713,1.823-2.995a2.355,2.355,0,0,1,2.1-.564l13.669,2.973a2.242,2.242,0,0,1,1.64,1.411,9.061,9.061,0,0,1,.433,1.584,9.872,9.872,0,0,1,.137,1.649A10.255,10.255,0,0,1,37.084,45.405Z" transform="translate(1.558 1.558)" fill="%23c12525"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center center;
+      left: -6rem;
+    }
+  }
 
-  &__email {}
+  &__email {
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 5.3rem;
+      height: 5.2rem;
+      position: absolute;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="47.441" height="40.664" viewBox="0 0 47.441 40.664"><path d="M79.441,78.578a4.406,4.406,0,0,0-2.147-3.84L55.721,64,34.147,74.738A4.661,4.661,0,0,0,32,78.578v21.567a4.531,4.531,0,0,0,4.518,4.518h38.4a4.531,4.531,0,0,0,4.518-4.518ZM55.721,89.415,37.573,77.555l18.147-9.036,18.147,9.036Z" transform="translate(-32 -64)" fill="%23c12525"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center center;
+      left: -6rem;
+    }
+  }
 }

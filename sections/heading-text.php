@@ -3,9 +3,9 @@
   $heading_component = $args['heading_component'];
   $text_component = $args['text_component'];
   $enable_white_version = $args['enable_white_version'];
+  $text_component_enable_full_width = $args['text_component_enable_full_width'];
   $heading_in_content = $args['heading_in_content'];
 ?>
-
 
 <?php if ($heading_component) : ?>
   <h2 class="heading heading--center 

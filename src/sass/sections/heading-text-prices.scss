@@ -1,0 +1,36 @@
+.heading-text-prices {
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__row {
+    border-bottom: 1px solid $gray4;
+    display: flex;
+    justify-content: space-between;
+
+    .tooltip {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15.347" height="15.347" viewBox="0 0 15.347 15.347"><path d="M7.674,0a7.674,7.674,0,1,0,7.674,7.674A7.674,7.674,0,0,0,7.674,0ZM6.714,6.714a.959.959,0,0,1,1.918,0v4.8a.959.959,0,1,1-1.918,0Zm.959-1.9a.959.959,0,1,1,.96-.959A.959.959,0,0,1,7.674,4.811Z" fill="%23e2e2e2"/></svg>');
+      display: inline-block;
+      position: relative;
+      width: 1.6rem;
+      height: 1.6rem;
+
+      &:hover {
+        .tooltip__text {
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.3s ease;
+        }
+      }
+
+      &__text {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

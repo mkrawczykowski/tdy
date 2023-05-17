@@ -7,27 +7,28 @@
   $text_component_enable_full_width = get_sub_field('text_component_enable_full_width', $post->ID);
 ?>
 
-<section class="heading-text-employees" <?php display_margins_for_page($post->ID) ?>>
-  <div class="container">
-    <div class="section-background <?php echo get_modifier_version($enable_white_version, 'section-background', 'white'); ?>">
+<section class="heading-text-employees <?php echo get_modifier_version($enable_white_version, 'heading-text-employees', 'white'); ?>">
+  <div class="container " <?php display_margins_for_page($post->ID) ?>>
       <?php
+        get_template_part( 'sections/heading-text', '', array(
+          'heading_component' => $heading_component,
+          'text_component' => $text_component,
+          'enable_white_version' => $enable_white_version,
+          'text_component_enable_full_width' => $text_component_enable_full_width,
+          'heading_in_content' => true,
+        ) );
 
-      get_template_part( 'sections/heading-text', '' );
-
-      if ( have_rows('columns_repeater', $post->ID) ): 
-      
+        if ( have_rows('employees_repeater', $post->ID) ): 
       ?>
-        <div class="heading-text-columns__columns">
+        <div class="heading-text-employees__columns">
           <?php
-          while( have_rows('columns_repeater', $post->ID) ) : the_row(); 
-            $icon = get_sub_field('columns_repeater__icon', $post->ID);
-            $heading = get_sub_field('columns_repeater__heading', $post->ID);
-            $text = get_sub_field('columns_repeater__text', $post->ID);
+          while( have_rows('employees_repeater', $post->ID) ) : the_row(); 
+            $employee = get_sub_field('employers_repeater__image', $post->ID);
             ?>
             
-            <div class="heading-text-columns__column">
+            <div class="heading-text-employees__column">
               <?php 
-                echo $icon ? wp_get_attachment_image($icon, 'image-1640', NULL, array( "class" => "heading-text-columns__icon" )) : NULL; 
+                echo $employee ? wp_get_attachment_image($employee, 'image-260', NULL, array( "class" => "heading-text-employees__icon" )) : NULL; 
               
                 echo $heading ? '<h3 class="heading heading--red-small">' . $heading . '</h3>' : NULL;
                 
@@ -41,7 +42,5 @@
       <?php
         endif;
       ?>
-
-    </div>
   </div>
 </section>

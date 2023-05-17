@@ -1,1 +1,25 @@
-.heading-text-employees {}
+.heading-text-employees {
+  &--white {
+    .container {
+      background-color: $white;
+      border-radius: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  &__columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    max-width: 137rem;
+    margin: 6.4rem auto 0 auto;
+  }
+
+  &__column {
+    background-color: $gray3;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    box-shadow: 0px 3px 20px 0px rgba(66, 68, 90, 0.16);
+  }
+}

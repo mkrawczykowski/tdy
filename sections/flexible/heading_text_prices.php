@@ -12,7 +12,12 @@
     <div class="section-background <?php echo get_modifier_version($enable_white_version, 'section-background', 'white'); ?>">
       <?php
 
-      get_template_part( 'sections/heading-text', '' );
+      get_template_part( 'sections/heading-text', '', array(
+        'heading_component' => $heading_component,
+        'text_component' => $text_component,
+        'enable_white_version' => $enable_white_version,
+        'heading_in_content' => true,
+      ) );
 
       if ( have_rows('prices_repeater', $post->ID) ):
       
@@ -27,8 +32,8 @@
             
             <div class="heading-text-prices__row">
               <?php
-                echo $text ? '<p class="text text--small">' . $text . '</p>' : NULL;
-                echo $description ? '<p class="tooltip">' . $description . '</p>' : NULL;
+                echo $name ? '<p class="text text--small">' . $name . '</p>' : NULL;
+                echo $description ? '<a class="tooltip"><p class="tooltip__text">' . $description . '</p></a>' : NULL;
                 echo $price ? '<p class="text text--small">' . $price . '</p>' : NULL;
               ?>
             </div>
