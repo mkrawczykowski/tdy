@@ -26,6 +26,5 @@
 
 <section class="featured-image <?php echo $is_front_page ? 'featured-image--front-page' : null; ?>">
   <?php 
-  echo $post->ID;
   echo $header_section_content; ?>
 </section>

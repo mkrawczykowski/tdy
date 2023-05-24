@@ -10,10 +10,11 @@
  */
 
 function display_margins_for_page($pageID){
+  $ignore_margin_top_small_screens = get_sub_field('ignore_margin_top_small_screens', $pageID);
   $margin_padding_styles = 'style="';
 
   //generating margins
-  $margin_padding_styles .= get_sub_field('margin_top', $pageID) ? 'margin-top: ' . strval(get_sub_field('margin_top', $pageID)) . 'px; ' : null;
+  $margin_padding_styles .= get_sub_field('margin_top', $pageID) ? 'margin-top: ' . strval(get_sub_field('margin_top', $pageID)) . 'px; ' : null;  
   $margin_padding_styles .= get_sub_field('margin_bottom', $pageID) ? 'margin-bottom: ' . strval(get_sub_field('margin_bottom', $pageID)) . 'px; ' : null;
 
   //generating paddings
@@ -29,9 +30,9 @@ function display_margins_for_page($pageID){
  *
  * Creates CSS selector based on ACF true/false field and 
  *
- * @param   boolean  $field  1 or 0 (ACF true/false field)
+ * @param   boolean  $field 1 or 0 (ACF true/false field)
  * @param   string   $selector a selector to add modifier without color modifier
- * @param   string   $modifier 'white' or 'black' for color, 
+ * @param   string   $modifier ('white' or 'black' for color)
  * @return  string   Selector with attached color modifier
  *
  */

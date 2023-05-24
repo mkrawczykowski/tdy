@@ -5,7 +5,7 @@
   display: inline-block;
   z-index: 5;
 
-  @include media-up(xl) {
+  @include media-up(xxl) {
     display: none;
   }
 

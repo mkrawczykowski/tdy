@@ -1,11 +1,15 @@
 .image {
-  height: 60rem;
   overflow: hidden;
 
   &--below {
     z-index: 2;
   }
 
+  &--no-top-margin {
+    @include media-down(xl) {
+      margin-top: 0 !important;
+    }
+  }
 
   &__picture {
     height: 100%;

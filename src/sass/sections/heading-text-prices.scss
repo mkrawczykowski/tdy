@@ -1,35 +1,118 @@
 .heading-text-prices {
+  &--white {
+    .container {
+      background-color: $white;
+      border-radius: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
   &__rows {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    margin-top: 4.2rem;
+
+    @include media-up(xxl) {
+      padding: 0 4.4rem;
+      margin-top: 8.2rem;
+    }
   }
 
   &__row {
     border-bottom: 1px solid $gray4;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 2.2rem;
+    margin-bottom: 0.7rem;
+    flex-direction: column;
+
+    @include media-up(md) {
+      flex-direction: row;
+    }
 
     .tooltip {
-      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15.347" height="15.347" viewBox="0 0 15.347 15.347"><path d="M7.674,0a7.674,7.674,0,1,0,7.674,7.674A7.674,7.674,0,0,0,7.674,0ZM6.714,6.714a.959.959,0,0,1,1.918,0v4.8a.959.959,0,1,1-1.918,0Zm.959-1.9a.959.959,0,1,1,.96-.959A.959.959,0,0,1,7.674,4.811Z" fill="%23e2e2e2"/></svg>');
-      display: inline-block;
-      position: relative;
-      width: 1.6rem;
-      height: 1.6rem;
+      @include media-up(xl) {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.347 15.347"><path d="M7.674,0a7.674,7.674,0,1,0,7.674,7.674A7.674,7.674,0,0,0,7.674,0ZM6.714,6.714a.959.959,0,0,1,1.918,0v4.8a.959.959,0,1,1-1.918,0Zm.959-1.9a.959.959,0,1,1,.96-.959A.959.959,0,0,1,7.674,4.811Z" fill="%23e2e2e2"/></svg>');
+        display: inline-block;
+        position: relative;
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 1.5rem;
+        top: 0.3rem;
 
-      &:hover {
-        .tooltip__text {
-          opacity: 1;
-          visibility: visible;
-          transition: all 0.3s ease;
+        &:hover {
+          .tooltip__text {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease;
+          }
         }
       }
 
       &__text {
-        position: absolute;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
+        font-size: 1.4rem;
+        background-color: $white;
+        display: inline-block;
+        width: 100%;
+
+        @include media-up(xl) {
+          position: absolute;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease;
+          width: 31rem;
+          position: absolute;
+          top: -5px;
+          padding: 1rem;
+          left: 22px;
+          background-color: $gray1;
+        }
+      }
+    }
+
+    &-name {
+      text-align: center;
+      font-size: 2.4rem;
+      line-height: 4rem;
+      color: $black;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+
+      @include media-up(md) {
+        margin-bottom: 0;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        max-width: 40rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+
+      @include media-up(md) {
+        display: inline;
+      }
+    }
+
+    &-price {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start
+    }
+
+    .heading-text-prices__price-button {
+      display: inline-block;
+      background-color: $red;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: $white;
+      border-radius: 3rem;
+      padding: 1.1rem 3.1rem;
+
+      strong {
+        font-weight: 800;
       }
     }
   }

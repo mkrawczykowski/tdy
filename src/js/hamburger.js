@@ -5,5 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     mainNav.classList.toggle('active');
+    if (hamburger.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+    }
+    if (!hamburger.classList.contains('active')) {
+      document.body.style.overflow = 'auto';
+    }
+
   });
 });

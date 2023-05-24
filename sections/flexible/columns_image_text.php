@@ -6,8 +6,8 @@
   $enable_white_version = get_sub_field('enable_white_version', $post->ID);
 ?>
 
-<section class="columns-image-text <?php echo get_modifier_version($enable_white_version, 'columns-image-text', 'white'); ?>" <?php display_margins_for_page($post->ID) ?>>
-  <div class="container">
+<section class="columns-image-text <?php echo get_modifier_version($enable_white_version, 'columns-image-text', 'white'); ?>" >
+  <div class="container" <?php display_margins_for_page($post->ID) ?>>
     <div class="row">
       <div class="col col--first">
         <?php display_column_content('left', $image_or_text_left); ?>

@@ -23,6 +23,12 @@
     font-weight: 500;
     max-width: 32.5rem;
     text-align: center;
+    padding: 1rem 2rem;
+
+    @include media-up(xl) {
+      padding: 2rem;
+    }
+
   }
 
   &--strong {

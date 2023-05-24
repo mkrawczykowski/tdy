@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
         itemWithChildren.classList.toggle('active');
       }
 
-
-
       if (window.innerWidth > 1200) {
 
         const submenuFeaturedImage = document.querySelectorAll('.featured-image__menu-submenus > .featured-image__menu-submenu');
@@ -33,10 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         });
       }
-
-
-
-
     })
   })
 });

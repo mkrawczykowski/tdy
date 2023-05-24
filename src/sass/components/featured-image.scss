@@ -1,6 +1,6 @@
 .featured-image {
   padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 8.5rem;
   position: relative;
   width: 100%;
   display: flex;
@@ -11,6 +11,7 @@
     @include media-up(xxl) {
       padding-top: 26rem;
       min-height: 60rem;
+      padding-bottom: 18.8rem;
     }
   }
 }
