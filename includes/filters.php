@@ -1,8 +1,8 @@
 <?php
 
-  add_action('admin_head', 'my_custom_fonts');
+  add_action('admin_head', 'styling_acf_sections');
 
-  function my_custom_fonts() {
+  function styling_acf_sections() {
     echo '<style>
       .acf-flexible-content .layout .acf-fc-layout-handle {
         line-height: 2em;
