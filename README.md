@@ -14,4 +14,6 @@ production website: https://www.klubbokserskiteddy.pl/
 
 ## Screens from Wordpress ACF settings
 
-https://stronyireszta.pl/github-portfolio/tdy/tdy-acf-page.png
+- page editing with Flexible Field-based sections: https://stronyireszta.pl/github-portfolio/tdy/tdy-acf-page.png
+- well organized ACF groups: https://stronyireszta.pl/github-portfolio/tdy/tdy-acf-groups.gif
+- how content sections are built using Clone field: https://stronyireszta.pl/github-portfolio/tdy/tdy-acf-sections-clone-field.gif
