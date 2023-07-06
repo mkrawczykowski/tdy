@@ -11,3 +11,7 @@ production website: https://www.klubbokserskiteddy.pl/
 - ACF Pro + sections built with Flexible Field
 - Webpack
 - ...aaand some JavaScript
+
+## Screens from Wordpress ACF settings
+
+https://stronyireszta.pl/github-portfolio/tdy/tdy-acf-page.png
